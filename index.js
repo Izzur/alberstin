@@ -14,4 +14,6 @@ bot.on('sticker', (ctx) => ctx.reply('👍'))
 bot.hears('hi', (ctx) => ctx.reply('Hey there'))
 bot.hears(/buy/i, (ctx) => ctx.reply('Buy-buy'))
 
+require('./libs/meetup')(bot)
+
 bot.startPolling()
